@@ -16,12 +16,19 @@
     <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
     <link href="assets/css/app.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="pt3"><a class="menu-toggle" id="main-menu-toggle" href="#main-menu" aria-label="Open main menu"><span class="sr-only">Open main menu</span><span aria-hidden="true">Меню</span></a>
+    <nav class="main-menu" id="main-menu" aria-label="Main menu"><a class="menu-close" id="main-menu-close" href="#main-menu-toggle" aria-label="Close main menu"><span class="sr-only">Close main menu</span><span aria-hidden="true">Закрыть</span></a>
+      <ul aria-labelledby="main-menu-heading">
+        <li><a href="#Moy-Mir">Мой Мир</a></li>
+        <li><a href="#Oni">Они</a></li>
+        <li><a href="#Kak-ikh-zovut">Как их зовут</a></li>
+      </ul>
+    </nav><a class="backdrop" href="#main-menu-toggle" tabindex="-1" aria-hidden="true" hidden=""></a>
     <main class="max-width-3 mx-auto p2">
-      <header class="mt3 mb3">
+      <header class="mt2">
         <h1 class="h1">Левитатум</h1>
       </header>
-      <article>
+      <article id="Moy-Mir">
         <h2 class="h2">Мой Мир</h2><img src="assets/img/story-01.jpg" alt="Мой Мир">
         <p>У меня есть одна необычная способность.</p>
         <p>Я вижу другой мир.</p>
@@ -29,13 +36,13 @@
         <p>Первый раз я обнаружила его ещё в детстве и тогда же поняла, что больше никто его не видит.</p>
         <p>Этот удивительный мир я назвала - Левитатум. За многие годы у меня накопились образы, истории, наблюдения, которыми пришло время поделиться с вами.</p>
       </article>
-      <article>
+      <article id="Oni">
         <h2 class="h2">Они</h2><img src="assets/img/story-02.jpg" alt="Мой Мир">
         <p>Заглядывая в мир Левитатум, я чаще вижу вот этих существ.</p>
         <p>Они самая многочисленная форма жизни.</p>
       </article>
-      <article>
-        <h2 class="h2">Как их зовут.</h2><img src="assets/img/story-03.jpg" alt="Мой Мир">
+      <article id="Kak-ikh-zovut">
+        <h2 class="h2">Как их зовут</h2><img src="assets/img/story-03.jpg" alt="Мой Мир">
         <p>Никому не рассказывая о мире Левитатум, мне не было нужды именовать его обитателей. Когда же появилось желание делиться этими историями, я поняла, что нужно будет их как-то называть.</p>
         <p>Около года я ломала голову и подбирала варианты названий главным жителям мира Левитатум. Их было сотни.. Я пробовала разные подходы. Искала в других языках. Миксовала слова. Пробовала случайный подбор букв. Все тщетно! Ни один вариант так и не лёг, не прижился.</p>
         <p>Несколько раз я забрасывала эту идею «на дальнюю полку», надеясь, что подсознание все сделает само. Знаете, так бывает? Этот трюк так же не помог.</p>

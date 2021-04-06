@@ -1,0 +1,15 @@
+a#main-menu-toggle.menu-toggle(href='#main-menu' aria-label='Open main menu')
+    span.sr-only Open main menu
+    span(aria-hidden='true') Меню
+nav#main-menu.main-menu(aria-label='Main menu')
+    a#main-menu-close.menu-close(href='#main-menu-toggle' aria-label='Close main menu')
+        span.sr-only Close main menu
+        span(aria-hidden='true') Закрыть
+    ul(aria-labelledby='main-menu-heading')
+        li
+            a(href='#Moy-Mir') Мой Мир
+        li
+            a(href='#Oni') Они
+        li
+            a(href='#Kak-ikh-zovut') Как их зовут
+a.backdrop(href='#main-menu-toggle' tabindex='-1' aria-hidden='true' hidden='')

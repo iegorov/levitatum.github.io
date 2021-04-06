@@ -1,9 +1,10 @@
 doctype html
 html(lang="ru")
   include blocks/head
-  body
+  body(class="pt3")
+    include blocks/menu
     main(class="max-width-3 mx-auto p2")
-      header(class="mt3 mb3")
+      header(class="mt2")
         h1(class="h1") Левитатум
       include blocks/stories/story-01
       include blocks/stories/story-02
