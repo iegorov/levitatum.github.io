@@ -1,7 +1,24 @@
 {
   "name": "levitatum",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iegorov/levitatum.github.io.git"
+  },
   "scripts": {
-    "start": "browser-sync start --server '' --files ''"
+    "server": "browser-sync start --server '' --files ''",
+    "watch": "npx gulp watch",
+    "start": "npm-run-all --parallel watch server",
+    "build": "npx gulp default"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.12.3",
+    "gulp": "^4.0.2",
+    "gulp-cache-bust": "^1.0.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-util": "^3.0.7",
+    "npm-run-all": "^4.1.5",
+    "path": "^0.12.7"
   }
 }
