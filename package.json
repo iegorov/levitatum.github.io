@@ -1,0 +1,7 @@
+{
+  "name": "levitatum",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "browser-sync start --server '' --files ''"
+  }
+}
