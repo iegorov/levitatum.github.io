@@ -5,7 +5,6 @@
 npm install
 ```
 
-##Режимы
 Сборка:
 ```bash
 npm run build
