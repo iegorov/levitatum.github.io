@@ -19,10 +19,6 @@ var paths = {
   bundles: 'assets/img/',
   html: './'
 };
-// Запуск живой сборки
-gulp.task('live', function() {
-  gulp.start('pug', 'cache', 'watch');
-});
 
 // Федеральная служба по контролю за оборотом файлов
 gulp.task('watch', function(done) {
