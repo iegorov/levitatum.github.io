@@ -78,10 +78,14 @@ select {
 }
 
 body {
-    font-family: 'Bad Script', cursive;
+    font-family: 'Neucha', cursive;
 }
 
 p {
     font-size: 21px;
     line-height: 32px;
+}
+
+article + article {
+    margin-top: 2rem;
 }
