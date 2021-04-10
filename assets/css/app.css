@@ -313,18 +313,19 @@ article {
 
     .main-menu ul {
         position: fixed;
+        top: 0;
         left: 0;
         display: flex; /* allows for full height of menu */
         flex-direction: column;
+        height: 100vh;
+        width: auto;
         max-width: 210px;
+        overflow: auto;
 
-        /* Undo off-canvas styling */
-        padding: 0;
+        padding: 45px 0;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
-        height: auto;
-        width: auto;
         background: none;
     }
 
