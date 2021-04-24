@@ -1,7 +1,8 @@
 @font-face {
     font-family: 'Neucha';
     src: url('/assets/fonts/Neucha-Regular.woff2') format('woff2'),
-         url('/assets/fonts/Neucha-Regular.ttf')  format('truetype')
+         url('/assets/fonts/Neucha-Regular.ttf')  format('truetype');
+    font-display: swap;
 }
 /* Указываем box sizing */
 *,
