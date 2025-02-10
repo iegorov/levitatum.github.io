@@ -1,1 +1,21 @@
-"use strict";$(document).ready(function(){$(document).on("mouseover mouseout","a",function(e){var t=$(this).attr("href");t&&"#"!=t&&$("a").filter('[href="'+$(this).attr("href")+'"]').toggleClass("hover","mouseover"==e.type)})});
+"use strict";
+
+function highlightActiveMenuItem() {
+    const currentUrl = window.location.href;
+    const menuItems = document.querySelectorAll("nav#main-menu a");
+
+    menuItems.forEach((item) => {
+        item.classList.remove("active");
+        if (currentUrl.includes(item.getAttribute("href"))) {
+            item.classList.add("active");
+        }
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    highlightActiveMenuItem();
+
+    window.addEventListener("hashchange", function () {
+        highlightActiveMenuItem();
+    });
+});
