@@ -19,9 +19,6 @@
         "gulp-plumber": "^1.1.0",
         "gulp-pug": "^4.0.1",
         "gulp-util": "^3.0.7",
-        "npm-run-all": "^4.1.5",
-        "path": "^0.12.7",
-        "imagemin": "^7.0.1",
-        "imagemin-mozjpeg": "^9.0.0"
+        "npm-run-all": "^4.1.5"
     }
 }
